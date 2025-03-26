@@ -2,9 +2,20 @@ class MovieSerializer
   include JSONAPI::Serializer
 
   set_type :movie
-  attributes :id, :title, :vote_average
+  attributes :title, :vote_average
 
-  attribute :id do |movie|
-    movie[:id].to_s
+  def self.format_movie_list(movies)
+    { data:
+        movies.map do |movie|
+          {
+            id: movie[:id],
+            type: "movie",
+            attributes: {
+              title: movie[:title],
+              vote_average: movie[:vote_average]
+            }
+          }
+        end
+    }
   end
 end
