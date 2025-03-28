@@ -22,5 +22,9 @@ class ViewingParty < ApplicationRecord
       movie_title: viewing_party_params[:name],
       host_id: viewing_party_params[:name]
     )
+
+    if party.saved?
+      
+    end
   end
 end
