@@ -5,7 +5,7 @@ class Api::V1::ViewingPartiesController < ApplicationController
     if party.persisted?
       # Create invites for each user in the invitees list
       params[:invitees].each do |user_id|
-        binding.pry
+        # binding.pry
         ViewingInvite.create(viewing_party: party, user_id: user_id)
       end
 
