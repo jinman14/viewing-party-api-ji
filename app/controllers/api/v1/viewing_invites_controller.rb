@@ -1,7 +1,11 @@
 class Api::V1::ViewingInvitesController < ApplicationController
   
   def create
-    party = ViewingParty.find(params[:viewing_party_id])
+    party = ViewingParty.find_by(id: params[:viewing_party_id])
+    
+    if party.nil?
+      return render json: { error: "Requires a valid viewing party id, unfortunately #{params[:viewing_party_id]} isn't one." }, status: :not_found
+    end
 
     user = User.find_by(id: viewing_invite_params[:invitee_user_id])
 
