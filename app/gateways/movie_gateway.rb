@@ -14,6 +14,12 @@ class MovieGateway
     json[:results]
   end
 
+  def self.fetch_movie_details(movie_id)
+    response = conn.get("/3/movie/#{movie_id}")
+    json = JSON.parse(response.body, symbolize_names: true)
+    json if response.status == 200
+  end
+
   private
 
   def self.conn
