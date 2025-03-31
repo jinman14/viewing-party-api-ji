@@ -9,4 +9,18 @@ class Api::V1::MoviesController < ApplicationController
       render json: { error: "Failed to get the movies" }, status: :bad_request
     end
   end
+
+  def show
+    movie_id = params[:id]
+
+    movie_data = MovieGateway.fetch_movie_details(movie_id)
+
+    if movie_data
+      movie_details = MovieDetails.new(movie_data)
+
+      render json: MovieSerializer.new(movie_details).serializable_hash
+    else
+      render json: { error: "Uh oh! We don't know a movie by that id number" }, status: :not_found
+    end
+  end
 end
