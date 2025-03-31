@@ -70,6 +70,7 @@ RSpec.describe "Users API", type: :request do
 
   describe "Get All Users Endpoint" do
     it "retrieves all users but does not share any sensitive data" do
+      User.destroy_all
       User.create!(name: "Tom", username: "myspace_creator", password: "test123")
       User.create!(name: "Oprah", username: "oprah", password: "abcqwerty")
       User.create!(name: "Beyonce", username: "sasha_fierce", password: "blueivy")
@@ -85,6 +86,46 @@ RSpec.describe "Users API", type: :request do
       expect(json[:data][0][:attributes]).to_not have_key(:password)
       expect(json[:data][0][:attributes]).to_not have_key(:password_digest)
       expect(json[:data][0][:attributes]).to_not have_key(:api_key)
+    end
+  end
+
+  describe "Get A Detailed User Profile" do
+    it "retrieves a single user with their details" do
+      tom = User.create!(name: "Tom", username: "myspace_creator", password: "test123")
+      oprah = User.create!(name: "Oprah", username: "oprah", password: "abcqwerty")
+      beyonce = User.create!(name: "Beyonce", username: "sasha_fierce", password: "blueivy")
+      
+      party = ViewingParty.create!(name: "Test Party", start_time: "2025-02-01 10:00:00", end_time: "2025-02-01 14:30:00", movie_id: 862, movie_title: "Toy Story", host_id: tom.id)
+
+      ViewingInvite.create!(viewing_party_id: party.id, user_id: oprah.id)
+      ViewingInvite.create!(viewing_party_id: party.id, user_id: beyonce.id)
+      
+      get "/api/v1/users/#{tom.id}"
+      
+      expect(response).to be_successful
+      json = JSON.parse(response.body, symbolize_names: true)
+      
+      expect(json[:data][:type]).to eq("user")
+      expect(json[:data][:attributes][:name]).to eq("Tom")
+      expect(json[:data][:attributes][:viewing_parties_hosted][0][:name]).to eq("Test Party")
+    end
+
+    it "can also tell parties invited to for a single user" do
+      tom = User.create!(name: "Tom", username: "myspace_creator", password: "test123")
+      oprah = User.create!(name: "Oprah", username: "oprah", password: "abcqwerty")
+      beyonce = User.create!(name: "Beyonce", username: "sasha_fierce", password: "blueivy")
+      
+      party = ViewingParty.create!(name: "Test Party", start_time: "2025-02-01 10:00:00", end_time: "2025-02-01 14:30:00", movie_id: 862, movie_title: "Toy Story", host_id: tom.id)
+
+      ViewingInvite.create!(viewing_party_id: party.id, user_id: oprah.id)
+      ViewingInvite.create!(viewing_party_id: party.id, user_id: beyonce.id)
+
+      get "/api/v1/users/#{oprah.id}"
+      
+      expect(response).to be_successful
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json[:data][:attributes][:viewing_parties_invited][0][:name]).to eq("Test Party")
     end
   end
 end

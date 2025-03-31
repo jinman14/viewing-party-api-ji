@@ -8,7 +8,7 @@ class Api::V1::ViewingPartiesController < ApplicationController
         # binding.pry
         ViewingInvite.create(viewing_party: party, user_id: user_id)
       end
-
+      # binding.pry
       render json: ViewingPartySerializer.format_viewing_party_list([party]), status: :created
     else
       render json: { errors: party.errors.full_messages }, status: :unprocessable_entity
@@ -22,6 +22,6 @@ class Api::V1::ViewingPartiesController < ApplicationController
   end
 
   def invitees
-    params[:invitees] || []
+    params[:invitees]
   end
 end

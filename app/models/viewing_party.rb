@@ -1,8 +1,9 @@
 class ViewingParty < ApplicationRecord
   has_many :viewing_invites
   has_many :users, through: :viewing_invites
+  has_many :invitees, through: :viewing_invites, source: :user
 
-  validates_presence_of :name, :start_time, :end_time, :movie_id, :movie_title
+  validates :name, :start_time, :end_time, :movie_id, :movie_title, :host_id, presence: true
   # validate :party_duration_is_valid
 
   def movie_runtime_in_minutes
