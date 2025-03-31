@@ -10,7 +10,7 @@ RSpec.describe "Movies API Endpoints", type: :request do
         headers: {
         'Accept'=>'application/json',
         'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-        'Authorization'=>'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MDJiMTMyZWYzMmNlM2Q4ZTJjNzIyN2E0OGQxNmIyZSIsIm5iZiI6MTc0Mjk0NTQ4Ni4zMjUsInN1YiI6IjY3ZTMzY2NlN2I3MzEzYjVhZWYwOGViNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KtcPqZylsno9_5uN7K2SzsgnTFV_guyMQwpX3bZKtp8',
+        'Authorization'=>"Bearer #{Rails.application.credentials.tmdb[:read_access_token]}",
         'User-Agent'=>'Faraday v2.10.1'
         }).
       to_return(status: 200, body: json_response, headers: {})
@@ -34,7 +34,7 @@ RSpec.describe "Movies API Endpoints", type: :request do
           headers: {
           'Accept'=>'application/json',
           'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'Authorization'=>'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MDJiMTMyZWYzMmNlM2Q4ZTJjNzIyN2E0OGQxNmIyZSIsIm5iZiI6MTc0Mjk0NTQ4Ni4zMjUsInN1YiI6IjY3ZTMzY2NlN2I3MzEzYjVhZWYwOGViNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KtcPqZylsno9_5uN7K2SzsgnTFV_guyMQwpX3bZKtp8',
+          'Authorization'=>"Bearer #{Rails.application.credentials.tmdb[:read_access_token]}",
           'User-Agent'=>'Faraday v2.10.1'
           }).
       to_return(status: 200, body: json_response, headers: {})
@@ -58,7 +58,7 @@ RSpec.describe "Movies API Endpoints", type: :request do
           headers: {
           'Accept'=>'application/json',
           'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'Authorization'=>'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MDJiMTMyZWYzMmNlM2Q4ZTJjNzIyN2E0OGQxNmIyZSIsIm5iZiI6MTc0Mjk0NTQ4Ni4zMjUsInN1YiI6IjY3ZTMzY2NlN2I3MzEzYjVhZWYwOGViNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KtcPqZylsno9_5uN7K2SzsgnTFV_guyMQwpX3bZKtp8',
+          'Authorization'=>"Bearer #{Rails.application.credentials.tmdb[:read_access_token]}",
           'User-Agent'=>'Faraday v2.10.1'
           }).
       to_return(status: 200, body: movie_details_response, headers: {})
@@ -70,7 +70,7 @@ RSpec.describe "Movies API Endpoints", type: :request do
           headers: {
           'Accept'=>'application/json',
           'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'Authorization'=>'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MDJiMTMyZWYzMmNlM2Q4ZTJjNzIyN2E0OGQxNmIyZSIsIm5iZiI6MTc0Mjk0NTQ4Ni4zMjUsInN1YiI6IjY3ZTMzY2NlN2I3MzEzYjVhZWYwOGViNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KtcPqZylsno9_5uN7K2SzsgnTFV_guyMQwpX3bZKtp8',
+          'Authorization'=>"Bearer #{Rails.application.credentials.tmdb[:read_access_token]}",
           'User-Agent'=>'Faraday v2.10.1'
           }).
       to_return(status: 200, body: movie_reviews_response, headers: {})
@@ -82,7 +82,7 @@ RSpec.describe "Movies API Endpoints", type: :request do
           headers: {
           'Accept'=>'application/json',
           'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'Authorization'=>'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MDJiMTMyZWYzMmNlM2Q4ZTJjNzIyN2E0OGQxNmIyZSIsIm5iZiI6MTc0Mjk0NTQ4Ni4zMjUsInN1YiI6IjY3ZTMzY2NlN2I3MzEzYjVhZWYwOGViNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KtcPqZylsno9_5uN7K2SzsgnTFV_guyMQwpX3bZKtp8',
+          'Authorization'=>"Bearer #{Rails.application.credentials.tmdb[:read_access_token]}",
           'User-Agent'=>'Faraday v2.10.1'
           }).
       to_return(status: 200, body: movie_cast_response, headers: {})
@@ -97,6 +97,29 @@ RSpec.describe "Movies API Endpoints", type: :request do
       expect(json[:data][:attributes][:genres]).to eq(["Animation", "Adventure", "Family", "Comedy"])
       expect(json[:data][:attributes][:cast].count).to eq(10)
       expect(json[:data][:attributes][:reviews].first[:author]).to eq("Gimly")
+    end
+  end
+
+  describe "sad path" do
+    it "can tell if the movie id does not exist" do
+      movie_details_response = File.read('spec/fixtures/movie_details_query.json')
+
+      stub_request(:get, "https://api.themoviedb.org/3/movie/banana").
+        with(
+          headers: {
+          'Accept'=>'application/json',
+          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+          'Authorization'=>"Bearer #{Rails.application.credentials.tmdb[:read_access_token]}",
+          'User-Agent'=>'Faraday v2.10.1'
+          }).
+      to_return(status: 404, body: movie_details_response, headers: {})
+
+      get "/api/v1/movies/banana"
+
+      expect(response).to have_http_status(:not_found)
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json[:error]).to eq("Uh oh! We don't know a movie by that id number")
     end
   end
 end
