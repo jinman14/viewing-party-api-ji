@@ -92,6 +92,11 @@ RSpec.describe "Movies API Endpoints", type: :request do
       expect(response).to be_successful
       json = JSON.parse(response.body, symbolize_names: true)
 
+      expect(json[:data][:id]).to eq("862")
+      expect(json[:data][:attributes][:runtime]).to eq("1 hours, 21 minutes")
+      expect(json[:data][:attributes][:genres]).to eq(["Animation", "Adventure", "Family", "Comedy"])
+      expect(json[:data][:attributes][:cast].count).to eq(10)
+      expect(json[:data][:attributes][:reviews].first[:author]).to eq("Gimly")
     end
   end
 end
