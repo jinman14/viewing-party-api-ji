@@ -1,0 +1,403 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/TXSxV23MWYkezZ3219gtgcSX6n.jpg",
+            "genre_ids": [
+                12,
+                16,
+                14
+            ],
+            "id": 123,
+            "original_language": "en",
+            "original_title": "The Lord of the Rings",
+            "overview": "The Fellowship of the Ring embark on a journey to destroy the One Ring and end Sauron's reign over Middle-earth.",
+            "popularity": 5.3438,
+            "poster_path": "/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg",
+            "release_date": "1978-11-15",
+            "title": "The Lord of the Rings",
+            "video": false,
+            "vote_average": 6.6,
+            "vote_count": 955
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/bey6QCYFsC7IA1g0HGdI4ZqYNkl.jpg",
+            "genre_ids": [
+                18,
+                27,
+                53
+            ],
+            "id": 920429,
+            "original_language": "en",
+            "original_title": "The Great and Terrible Day of the Lord",
+            "overview": "On Michael and Gabby's first romantic get-away things takes a terrifying turn when God delivers unsettling news to Gabby after taking over Michael's body. Is Michael a manipulative psychopath or could this really be a direct experience with her creator offering a path to eternal happiness?",
+            "popularity": 0.234,
+            "poster_path": "/6EyEGGhkaDZLCjxRIRoeUm248G8.jpg",
+            "release_date": "2021-12-28",
+            "title": "The Great and Terrible Day of the Lord",
+            "video": false,
+            "vote_average": 6.95,
+            "vote_count": 40
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
+            "genre_ids": [
+                12,
+                14,
+                28
+            ],
+            "id": 122,
+            "original_language": "en",
+            "original_title": "The Lord of the Rings: The Return of the King",
+            "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+            "popularity": 29.9968,
+            "poster_path": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+            "release_date": "2003-12-17",
+            "title": "The Lord of the Rings: The Return of the King",
+            "video": false,
+            "vote_average": 8.482,
+            "vote_count": 24895
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/g8Yytnby0hIPft5l56mgJtZyR1k.jpg",
+            "genre_ids": [
+                28
+            ],
+            "id": 965839,
+            "original_language": "en",
+            "original_title": "Lord of the Streets",
+            "overview": "When Jason Dyson refuses to make his prized fighter throw an MMA match, a notorious gangster collects his debt by killing the fighter and kidnapping Jason's daughter. Now he must train a prisoner to endure five consecutive underground fights to save her.",
+            "popularity": 0.6705,
+            "poster_path": "/n9YWVQRc0zw0nwrFcOkOpffZxjc.jpg",
+            "release_date": "2022-04-22",
+            "title": "Lord of the Streets",
+            "video": false,
+            "vote_average": 5.2,
+            "vote_count": 66
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/uXdilXyp8Oys5BguQaiJKYIcsJT.jpg",
+            "genre_ids": [
+                12,
+                18,
+                53
+            ],
+            "id": 10847,
+            "original_language": "en",
+            "original_title": "Lord of the Flies",
+            "overview": "When their plane crashes, 25 schoolboys find themselves trapped on a tropical island, miles from civilization.",
+            "popularity": 3.3023,
+            "poster_path": "/xhxWsFgBYyDfRWfOhM1OrV88QDJ.jpg",
+            "release_date": "1990-03-16",
+            "title": "Lord of the Flies",
+            "video": false,
+            "vote_average": 6.4,
+            "vote_count": 566
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ie8OSgIHEl6yQiGJ90dsyBWOpQA.jpg",
+            "genre_ids": [
+                16,
+                14,
+                12,
+                28
+            ],
+            "id": 839033,
+            "original_language": "en",
+            "original_title": "The Lord of the Rings: The War of the Rohirrim",
+            "overview": "A sudden attack by Wulf, a clever and traitorous lord of Rohan seeking vengeance for the death of his father, forces Helm Hammerhand, the King of Rohan, and his people to make a daring last stand in the ancient stronghold of the Hornburg.",
+            "popularity": 36.8102,
+            "poster_path": "/cXzCOx1hUuU9CfmiEv6rXjb6EqU.jpg",
+            "release_date": "2024-12-05",
+            "title": "The Lord of the Rings: The War of the Rohirrim",
+            "video": false,
+            "vote_average": 6.632,
+            "vote_count": 517
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/1KP6P6wa7CH9JKlSTtoXsRijh3F.jpg",
+            "genre_ids": [
+                18,
+                12,
+                53
+            ],
+            "id": 9960,
+            "original_language": "en",
+            "original_title": "Lord of the Flies",
+            "overview": "Following a plane crash a group of schoolboys find themselves on a deserted island. They appoint a leader and attempt to create an organized society for the sake of their survival. Democracy and order soon begin to crumble when a breakaway faction regresses to savagery with horrifying consequences.",
+            "popularity": 2.2046,
+            "poster_path": "/bqjnbDkmKaxXVBBY6GpWkPD5gSJ.jpg",
+            "release_date": "1963-08-13",
+            "title": "Lord of the Flies",
+            "video": false,
+            "vote_average": 6.7,
+            "vote_count": 526
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/x2RS3uTcsJJ9IfjNPcgDmukoEcQ.jpg",
+            "genre_ids": [
+                12,
+                14,
+                28
+            ],
+            "id": 120,
+            "original_language": "en",
+            "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+            "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+            "popularity": 28.0557,
+            "poster_path": "/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+            "release_date": "2001-12-18",
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "video": false,
+            "vote_average": 8.418,
+            "vote_count": 25800
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/yo0f00S37vaaXZPlpxL7lKWOVDU.jpg",
+            "genre_ids": [
+                14,
+                12,
+                10749
+            ],
+            "id": 1265798,
+            "original_language": "zh",
+            "original_title": "妖神令",
+            "overview": "As the Demon King Baize is on the verge of awakening, the immortal disciple Mu Qing sets out to the demon realm before the chaos spreads across the three realms, seeking the magical instrument Qingluan Mirror to slay the Demon King. By a twist of fate, Mu Qing embarks on the journey with the little demon Chaoyan. During their adventure, they grow to know and love each other. Just as they are about to fulfill their mission, Mu Qing discovers that Chaoyan is the reincarnation of the Demon King, marking their relationship with a destiny of tragedy despite their deep bond across two lives.",
+            "popularity": 0.3273,
+            "poster_path": "/iI3LugjkTNavmFZSumcJSBGoZ0h.jpg",
+            "release_date": "2024-03-28",
+            "title": "The Lord of the Monsters",
+            "video": false,
+            "vote_average": 9.167,
+            "vote_count": 3
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jfEOzpsjc6JDlKhUHb4toWQPt.jpg",
+            "genre_ids": [
+                12,
+                14,
+                28
+            ],
+            "id": 121,
+            "original_language": "en",
+            "original_title": "The Lord of the Rings: The Two Towers",
+            "overview": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor. Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+            "popularity": 22.7554,
+            "poster_path": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+            "release_date": "2002-12-18",
+            "title": "The Lord of the Rings: The Two Towers",
+            "video": false,
+            "vote_average": 8.402,
+            "vote_count": 22420
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lYLWwO3rlLmBOEWq7C7uZkS15Gs.jpg",
+            "genre_ids": [
+                12,
+                18,
+                28,
+                10749
+            ],
+            "id": 11002,
+            "original_language": "en",
+            "original_title": "Greystoke: The Legend of Tarzan, Lord of the Apes",
+            "overview": "A shipping disaster in the 19th Century has stranded a man and woman in the wilds of Africa. The lady is pregnant, and gives birth to a son in their tree house. Soon after, a family of apes stumble across the house and in the ensuing panic, both parents are killed. A female ape takes the tiny boy as a replacement for her own dead infant, and raises him as her son. Twenty years later, Captain Phillippe D'Arnot discovers the man who thinks he is an ape. Evidence in the tree house leads him to believe that he is the direct descendant of the Earl of Greystoke, and thus takes it upon himself to return the man to civilization.",
+            "popularity": 1.6907,
+            "poster_path": "/rdtEIdzqJTVhSLsjuR4U9t1KKxp.jpg",
+            "release_date": "1984-03-30",
+            "title": "Greystoke: The Legend of Tarzan, Lord of the Apes",
+            "video": false,
+            "vote_average": 6.3,
+            "vote_count": 469
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/5PyYI5tZzGCrZqBEkYWIOADZF5r.jpg",
+            "genre_ids": [
+                10751,
+                16
+            ],
+            "id": 273309,
+            "original_language": "en",
+            "original_title": "VeggieTales: Lord of the Beans",
+            "overview": "Sunday morning values, Saturday morning fun! It’s a tale of good versus evil with beans! Lord of the Beans follows the fantastic journey of a Flobbit named Toto Baggypants (Junior Asparagus) who inherits a most unusual and powerful bean. With the help of his mentor Randall and a spirited group of friends, Toto embarks on a mission to discover how he should use his gift. On their quest, the group encounters many challenges, including crossing the mountains of Much-Snowia, and facing the dreaded Lord Scaryman – who seeks the bean for misguided, selfish reasons. Will Toto discover the purpose of his giver, or will the scary dude and his Spark army capture the bean and wield its awesome powers?",
+            "popularity": 0.3198,
+            "poster_path": "/yOVOirMvCe74fy3l0WjrL9ABCYw.jpg",
+            "release_date": "2005-11-01",
+            "title": "VeggieTales: Lord of the Beans",
+            "video": true,
+            "vote_average": 7.1,
+            "vote_count": 24
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tjrKZVwRV418gGrKoenRlNPOAbO.jpg",
+            "genre_ids": [
+                18,
+                36
+            ],
+            "id": 840098,
+            "original_language": "it",
+            "original_title": "Il signore delle formiche",
+            "overview": "Based on true events of the late 60s in Italy, poet, playwright and myrmecologist Aldo Braibanti is prosecuted and sentenced to prison for the love he shares with his barely-of-age pupil and friend, Ettore. Amidst a chorus of voices of accusers, supporters and a largely hypocritical public, a single committed journalist takes on the task of piecing together the truth, between secrecy and desire, facing suspicion and censorship in the process.",
+            "popularity": 0.4397,
+            "poster_path": "/uPf3jwm4hRRXFyaGYGYPZhpDJd3.jpg",
+            "release_date": "2022-09-08",
+            "title": "Lord of the Ants",
+            "video": false,
+            "vote_average": 7.3,
+            "vote_count": 198
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/fZb5itrenb5g0QUsTgoDQKYutd3.jpg",
+            "genre_ids": [
+                18,
+                27,
+                53
+            ],
+            "id": 676844,
+            "original_language": "es",
+            "original_title": "Menéndez: el día del Señor",
+            "overview": "In this horror movie, a retired priest haunted by his sins is pulled back into the darkness when a friend begs him to help his possessed daughter.",
+            "popularity": 0.2772,
+            "poster_path": "/bZQ88XFGKTTrOyeWM7wVKLTuC1N.jpg",
+            "release_date": "2020-10-30",
+            "title": "The Day of the Lord",
+            "video": false,
+            "vote_average": 6.2,
+            "vote_count": 43
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99,
+                10770
+            ],
+            "id": 987847,
+            "original_language": "en",
+            "original_title": "Elephant - Lord of the Jungle",
+            "overview": "Great herds of Asian elephants once roamed from Baghdad to Beijing. Now only remnants of these once mighty herds survive, protected today by the Indian government. It is here that filmmaker Naresh Bedi turns his camera, capturing an intimate portrait of thee largest of land mammals. An adult elephant eats 300 pounds of green fodder and drinks 40 gallons of water a day. This film follows these gentle giants as they forage and feed, wallow in watering holes, dust their skin with dirt, and care for their young.",
+            "popularity": 0.0143,
+            "poster_path": null,
+            "release_date": "1987-01-01",
+            "title": "Elephant: Lord of the Jungle",
+            "video": false,
+            "vote_average": 10.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/8AZH7KCwTlHF6cXfurefLcysvtz.jpg",
+            "genre_ids": [
+                12,
+                36
+            ],
+            "id": 589756,
+            "original_language": "ru",
+            "original_title": "Повелитель ветра",
+            "overview": "The film is inspired by the record-breaking solo trip around the globe in a hot-air balloon made by the world-famous Russian explorer Fedor Konyukhov in July of 2016. Throughout his remarkable life, Konyukhov has proven time and time again that willpower, perseverance and faith can help overcome fear and doubt, and lead a person to triumph.",
+            "popularity": 0.128,
+            "poster_path": "/AvaShvzP1dCu7QIqiyl2noTJekw.jpg",
+            "release_date": "2023-10-05",
+            "title": "Lord of the Wind",
+            "video": false,
+            "vote_average": 6.7,
+            "vote_count": 9
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/51xEXB0PohLtlnywQRCMcQln8ee.jpg",
+            "genre_ids": [
+                10749,
+                36,
+                99
+            ],
+            "id": 446369,
+            "original_language": "it",
+            "original_title": "Raffaello - Il Principe delle Arti",
+            "overview": "Raphael: The Lord of the Arts is a documentary about the 15th century Italian Renaissance painter Raphael Sanzio.",
+            "popularity": 0.2069,
+            "poster_path": "/9hUrpeoSCZtHlYuM3REVOjtZZQH.jpg",
+            "release_date": "2017-04-03",
+            "title": "Raphael: The Lord of the Arts",
+            "video": false,
+            "vote_average": 7.7,
+            "vote_count": 20
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/1mtjTIcwlo6YmGrJEr7fnGeITx3.jpg",
+            "genre_ids": [
+                14,
+                12,
+                18
+            ],
+            "id": 1016184,
+            "original_language": "en",
+            "original_title": "The Lord of the Rings: The Rings of Power Global Fan Screening",
+            "overview": "An edited version of the first two episodes of The Lord of the Rings: The Rings of Power, shown exclusively to fans in cinemas around the world in August 2022. In a time of relative peace, an ensemble cast of characters confronts the re-emergence of evil to Middle-earth.",
+            "popularity": 1.5064,
+            "poster_path": "/toEUQXyDut4QecjC3RAdBoDVlUe.jpg",
+            "release_date": "2022-08-31",
+            "title": "The Lord of the Rings: The Rings of Power Global Fan Screening",
+            "video": true,
+            "vote_average": 7.276,
+            "vote_count": 49
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2HbsjDtvEovx7YF43nTgGmXcKGO.jpg",
+            "genre_ids": [
+                12,
+                14,
+                37
+            ],
+            "id": 54310,
+            "original_language": "it",
+            "original_title": "Tex e il signore degli abissi",
+            "overview": "Based on the adventures of the hero Tex from the comic strip by Bonelli. An interesting spaghetti-western/fantasy movie that blends magic and mythology with six-guns and stagecoaches.",
+            "popularity": 0.5635,
+            "poster_path": "/8jTpYTaEQc5UpAeGK5Dzyh5ybGg.jpg",
+            "release_date": "1985-09-06",
+            "title": "Tex and the Lord of the Deep",
+            "video": false,
+            "vote_average": 4.6,
+            "vote_count": 16
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/j724iaQRnQTaxZ5dNIsvYaE4RQo.jpg",
+            "genre_ids": [
+                35,
+                18,
+                10749
+            ],
+            "id": 48130,
+            "original_language": "en",
+            "original_title": "Edges of the Lord",
+            "overview": "A 12-year-old Jewish boy hides with a family of Catholic peasant farmers to escape the Nazis.",
+            "popularity": 0.4778,
+            "poster_path": "/toHIsXqxaLuqyTBIfzsqoPKibZO.jpg",
+            "release_date": "2001-10-12",
+            "title": "Edges of the Lord",
+            "video": false,
+            "vote_average": 6.4,
+            "vote_count": 83
+        }
+    ],
+    "total_pages": 18,
+    "total_results": 346
+}
