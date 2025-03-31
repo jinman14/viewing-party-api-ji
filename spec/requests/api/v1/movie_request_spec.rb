@@ -49,6 +49,50 @@ RSpec.describe "Movies API Endpoints", type: :request do
       expect(json[:data].first[:attributes][:title]).to eq("The Lord of the Rings")
       expect(json[:data].first[:attributes][:vote_average]).to eq(6.6)
     end
+
+    it "can retrieve and display details, reviews, and cast for a single movie" do
+      movie_details_response = File.read('spec/fixtures/movie_details_query.json')
+
+      stub_request(:get, "https://api.themoviedb.org/3/movie/862").
+        with(
+          headers: {
+          'Accept'=>'application/json',
+          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+          'Authorization'=>'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MDJiMTMyZWYzMmNlM2Q4ZTJjNzIyN2E0OGQxNmIyZSIsIm5iZiI6MTc0Mjk0NTQ4Ni4zMjUsInN1YiI6IjY3ZTMzY2NlN2I3MzEzYjVhZWYwOGViNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KtcPqZylsno9_5uN7K2SzsgnTFV_guyMQwpX3bZKtp8',
+          'User-Agent'=>'Faraday v2.10.1'
+          }).
+      to_return(status: 200, body: movie_details_response, headers: {})
+
+      movie_reviews_response = File.read('spec/fixtures/movie_reviews_query.json')
+
+      stub_request(:get, "https://api.themoviedb.org/3/movie/862/reviews").
+        with(
+          headers: {
+          'Accept'=>'application/json',
+          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+          'Authorization'=>'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MDJiMTMyZWYzMmNlM2Q4ZTJjNzIyN2E0OGQxNmIyZSIsIm5iZiI6MTc0Mjk0NTQ4Ni4zMjUsInN1YiI6IjY3ZTMzY2NlN2I3MzEzYjVhZWYwOGViNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KtcPqZylsno9_5uN7K2SzsgnTFV_guyMQwpX3bZKtp8',
+          'User-Agent'=>'Faraday v2.10.1'
+          }).
+      to_return(status: 200, body: movie_reviews_response, headers: {})
+
+      movie_cast_response = File.read('spec/fixtures/movie_cast_query.json')
+
+      stub_request(:get, "https://api.themoviedb.org/3/movie/862/credits").
+        with(
+          headers: {
+          'Accept'=>'application/json',
+          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+          'Authorization'=>'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MDJiMTMyZWYzMmNlM2Q4ZTJjNzIyN2E0OGQxNmIyZSIsIm5iZiI6MTc0Mjk0NTQ4Ni4zMjUsInN1YiI6IjY3ZTMzY2NlN2I3MzEzYjVhZWYwOGViNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KtcPqZylsno9_5uN7K2SzsgnTFV_guyMQwpX3bZKtp8',
+          'User-Agent'=>'Faraday v2.10.1'
+          }).
+      to_return(status: 200, body: movie_cast_response, headers: {})
+
+      get "/api/v1/movies/862"
+
+      expect(response).to be_successful
+      json = JSON.parse(response.body, symbolize_names: true)
+
+    end
   end
 end
 # describe "Show Movie Endpoint with details" do

@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Viewing Party", type: :request do
   describe "Create Viewing Party Endpoint" do
-    before(:each) do
+    before(:all) do
         User.create(id: 1, name: "Danny DeVito", username: "danny_de_v")
         User.create(id: 2, name: "Dolly Parton", username: "dollyP")
         User.create(id: 3, name: "Lionel Messi", username: "futbol_geek")
